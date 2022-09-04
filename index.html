@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>메이플스토리 Lite</title>
+</head>
+<body>
+  <h1>🍁메이플스토리 Lite🍁</h1>
+  <h5 id="bar">경험치  <span id="exp"></span>/<span id="expupnum"></span></h5>
+  <div class="character">
+    <img id="leftskill" src="skilleffect7.gif">
+    <img id="angel" src="angel.png" alt="angel">
+    <img src="skilleffect8.gif">
+  </div>
+  <div class="main">
+    <div class="window">
+      <p>✨Lv.<span id="level">1</span></p>
+      <p>💰메   소:<span id="maeso">3000</span></p>
+      <p>🪄공격력:<span id="expincrease">20</span></p>
+      <p>🦊펫 수:<span id="petnum">0</span></p>
+      
+      <button id="reinforce" onclick="reinforce()">Q 무기강화</button>
+      <button id="getmoney" onclick="getmoney()">W 재획</button>
+      <button id="buypet" onclick="buypet()">E 펫 구매</button>
+      <button id="info" onclick="info()">게임 안내</button>
+      <button id="hunt" onclick="hunt()">S 사냥</button>
+      <button id="multipet" onclick="multipet()">D 펫 증식</button>
+      <br><br>키보드로 플레이 가능합니다.
+      <br>주의! 새로고침 혹은 탭을 닫으면 게임이 초기화됩니다.
+      <audio autoplay controls>
+        <source src="bgm.mp3">
+      </audio>
+      <script src="script.js"></script>
+    </div>
+    <span id="madeby">제작 kraftenty@gmail.com</span>
+  </div>
+</body>
+</html>
