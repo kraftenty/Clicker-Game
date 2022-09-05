@@ -11,6 +11,7 @@ h1{
   background-color: black;
   color:white;
   font-size:2em;
+  letter-spacing: 0.5em;
   text-align: center;
 }
 #bar{
@@ -54,4 +55,20 @@ p{
 }
 #madeby{
   color:white;
+}
+
+.floating {
+  position: fixed; 
+  right: 50%; 
+  top: 20%; 
+  margin-right: -720px;
+  text-align:center;
+  width: 150px;
+  animation:rotate_image 3s ease infinite; transform-origin:50% -10%;
+}
+
+@keyframes rotate_image{
+  100%{
+    transform:rotate(360deg);
+  }
 }
