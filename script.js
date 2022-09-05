@@ -28,16 +28,16 @@ function hunt(){
 }
 
 function reinforce(){
-  if(maeso>=5000*level){
-    maeso-=5000*level;
+  if(maeso>=2000*level*level){
+    maeso-=2000*level*level;
     expIncrease+=10*level*level;
   }
   informationUpdate();
 }
 
 function getmoney(){
-  if(maeso>=5000*level){
-    maeso-=5000*level;
+  if(maeso>=2000*level*level){
+    maeso-=2000*leve*level;
     maesoIncrease+=50*level*level;
   }
   informationUpdate();
@@ -75,8 +75,8 @@ function petSystem(){
 
 function info(){
   alert('-=사냥=-\n메소를 획득하며, 현재 공격력 만큼의 경험치를 올린다.');
-  alert('-=무기강화=-\n무기강화 비용:5000메소 * 현재레벨\n공격력 증가:10 * 현재레벨^2');
-  alert('-=재획=-\n재획비용:5000메소 * 현재레벨\n메소 획득 증가:50 * 현재레벨^2');
+  alert('-=무기강화=-\n무기강화 비용:2000메소 * 현재레벨^2\n공격력 증가:10 * 현재레벨^2');
+  alert('-=재획=-\n재획비용:2000메소 * 현재레벨^2\n메소 획득 증가:50 * 현재레벨^2');
   alert('-=펫 구매=-\n비용:백만 메소\n펫 한 마리 추가\n참고:펫 한마리는 1초당 공격력 1을 증가시킵니다.');
   alert('-=펫 증식=-\n펫 증식 비용:십억 메소\n효과:1초당 펫 10마리씩 추가');
   alert('게임 목표\n300레벨을 달성하는 것입니다.');
